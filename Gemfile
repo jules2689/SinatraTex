@@ -4,4 +4,4 @@ ruby '2.3.1'
 gem 'sinatra'
 
 gem 'capistrano'
-gem 'capistrano-bundler'
+gem 'unicorn'
