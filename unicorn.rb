@@ -1,6 +1,6 @@
 # set path to app that will be used to configure unicorn, 
 # note the trailing slash in this example
-@dir = "/var/www/sinatratex/"
+@dir = "/var/www/sinatratex/current"
 
 worker_processes 1
 working_directory @dir
