@@ -1,1 +1,1 @@
-server '159.203.25.28', user: 'root', roles: %w(web app)
+server '45.55.73.207', user: 'root', roles: %w(web app)

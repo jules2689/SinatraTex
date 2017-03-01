@@ -4,7 +4,7 @@ require 'fileutils'
 ## Check for latex
 
 # Main Path
-output_temp_dir = './tmp/sinatratex'
+output_temp_dir = './tmp/DiaTex'
 FileUtils.mkdir_p(output_temp_dir) unless File.exist?(output_temp_dir)
 
 # Temporary pdf file

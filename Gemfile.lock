@@ -1,3 +1,12 @@
+GIT
+  remote: git@github.com:seuros/capistrano-puma.git
+  revision: e18b30c18aceceed003e8007c268125317a17a9d
+  specs:
+    capistrano3-puma (2.0.0)
+      capistrano (~> 3.5)
+      capistrano-bundler
+      puma (~> 3.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -14,14 +23,13 @@ GEM
       sshkit (~> 1.2)
     capistrano-harrow (0.5.3)
     i18n (0.8.1)
-    kgio (2.10.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (4.1.0)
+    puma (3.7.1)
     rack (1.5.2)
     rack-protection (1.5.1)
       rack
-    raindrops (0.16.0)
     rake (12.0.0)
     sinatra (1.4.4)
       rack (~> 1.4)
@@ -31,10 +39,6 @@ GEM
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     tilt (1.4.1)
-    unicorn (4.6.3)
-      kgio (~> 2.6)
-      rack
-      raindrops (~> 0.7)
 
 PLATFORMS
   ruby
@@ -42,11 +46,12 @@ PLATFORMS
 DEPENDENCIES
   capistrano
   capistrano-bundler
+  capistrano3-puma!
+  puma
   sinatra
-  unicorn
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.4.0p0
 
 BUNDLED WITH
-   1.13.6
+   1.14.5
