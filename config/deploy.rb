@@ -3,6 +3,7 @@ lock '3.7.2'
 
 set :application, 'DiaTex'
 set :repo_url, 'git@github.com:jules2689/sinatrex.git'
+set :user,            'deploy'
 set :stage,           :production
 set :ssh_options,     forward_agent: true, user: fetch(:user), keys: %w(~/.ssh/id_rsa.pub)
 
