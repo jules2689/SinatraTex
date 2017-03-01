@@ -2,10 +2,12 @@
 lock '3.7.2'
 
 set :application, 'DiaTex'
-set :repo_url, 'git@github.com:jules2689/sinatrex.git'
+set :repo_url, 'git@github.com:jules2689/sinatratex.git'
 set :user,            'deploy'
 set :stage,           :production
 set :ssh_options,     forward_agent: true, user: fetch(:user), keys: %w(~/.ssh/id_rsa.pub)
+
+set :chruby_ruby, 'ruby-2.3.0'
 
 set :nginx_sites_available_path, '/etc/nginx/sites-available'
 set :nginx_sites_enabled_path, '/etc/nginx/sites-enabled'
